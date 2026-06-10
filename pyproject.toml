@@ -1,0 +1,17 @@
+[project]
+name = "lladav-unofficial"
+version = "0.1.0"
+description = "Unofficial PyTorch implementation for LLaDA-V: Large Language Diffusion Models with Visual Instruction Tuning."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["torch>=2.2", "pyyaml>=6.0"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
